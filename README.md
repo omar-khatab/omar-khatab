@@ -29,10 +29,6 @@
 ![Material UI](https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-### 📊 GitHub Stats:
-![Omar's GitHub stats](https://github-readme-stats.vercel.app/api?username=omar-khatab&show_icons=true&theme=dark)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=omar-khatab&layout=compact&theme=dark)
-
 ### 🚀 Featured Projects:
 - [E-Commerce Store](https://github.com/omar-khatab/E-commerce) - React, Context API, Framer Motion - [Live](https://e-commerce-three-coral-58.vercel.app/)
 - [Admin Dashboard](https://github.com/omar-khatab/dashbord-template) - 8 pages admin panel - [Live](https://omar-khatab.github.io/dashbord-template/)
