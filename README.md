@@ -32,5 +32,5 @@
 ### 🚀 Featured Projects:
 - [E-Commerce Store](https://github.com/omar-khatab/E-commerce) - React, Context API, Framer Motion - [Live](https://e-commerce-three-coral-58.vercel.app/)
 - [Admin Dashboard](https://github.com/omar-khatab/dashbord-template) - 8 pages admin panel - [Live](https://omar-khatab.github.io/dashbord-template/)
-- [SaaS Landing - Next.js 14](https://github.com/omar-khatab/template-next.js) - [Live](https://saa-s-landing-next-js-14-paan-git-15ceee-omar-khatabs-projects.vercel.app/)
+- [SaaS Landing - Next.js]([https://github.com/omar-khatab/template-next.js](https://github.com/omar-khatab/SaaS-Landing-Next.js)) - [Live](https://saa-s-landing-next-js-14-paan-git-15ceee-omar-khatabs-projects.vercel.app/)
 - [Leon Agency](https://github.com/omar-khatab/Template_1) - PSD to HTML - [Live](https://omar-khatab.github.io/Template_1/)
