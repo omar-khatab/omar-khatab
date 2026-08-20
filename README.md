@@ -10,7 +10,7 @@
 - 👨‍💻 All of my projects are available at [https://portfolio-upgrade-wr9n.vercel.app/](https://portfolio-upgrade-wr9n.vercel.app/)
 - 💬 Ask me about **React, Next.js, JavaScript, HTML/CSS, Responsive Design**
 - 📫 How to reach me **omaressam0870@gmail.com**
-- 📄 Know about my experiences [My CV](https://portfolio-upgrade-wr9n.vercel.app/Omar_Khatab_CV_Final_LinkedIn_Fixed.pdf)
+- 📄 Know about my experiences [My CV](https://portfolio-upgrade-wr9n.vercel.app/omar%20essam%20khatab%20frontend%20developer.pdf)
 - ⚡ Fun fact **Mechanical Engineer who fell in love with Frontend**
 
 ### 🔗 Connect with me:
