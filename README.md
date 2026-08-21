@@ -17,7 +17,7 @@ Now building modern UIs with React 19, Next.js 14 (App Router), MUI, Tailwind, F
 - 📂 Fundamentals Showcase: **[roots-before-react](https://omar-khatab.github.io/roots-before-react/)**
 - 💬 Ask me about **React, Next.js, JavaScript, HTML/CSS, Responsive, PSD to HTML**
 - 📫 Reach me: **omareessam0870@gmail.com | 01278358368**
-- 📄 CV: [My CV](./omar%20essam%20khatab%20frontend%20developer%20.pdf)
+- 📄 CV: [My CV](./omar essam khatab frontend developerpdf)
 - ⚡ Fun fact: **Mechanical Engineer who fell in love with Frontend — Thermodynamics → Clean Code**
 
 ### 🔗 Connect with me:
