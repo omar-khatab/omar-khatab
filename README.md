@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://portfolio-upgrade-wr9n.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Live-000?style=for-the-badge&logo=vercel" /></a>
   <a href="https://omar-khatab.github.io/roots-before-react/"><img src="https://img.shields.io/badge/Roots_Before_React-7_Projects-0a58ca?style=for-the-badge" /></a>
-  <a href="https://github.com/omar-khatab/Portfolio-Upgrade/blob/main/Omar-Khatab-Frontend-CV-FINAL.pdf"><img src="https://img.shields.io/badge/CV-Download-red?style=for-the-badge&logo=adobeacrobatreader" /></a>
+  <a href="https://github.com/omar-khatab/Portfolio_Upgrade/blob/main/omar%20essam%20khatab%20frontend%20developer.pdf"><img src="https://img.shields.io/badge/CV-Download-red?style=for-the-badge&logo=adobeacrobatreader" /></a>
   <a href="https://www.linkedin.com/in/omar-essam-319c/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" /></a>
 </p>
 
@@ -34,7 +34,7 @@ Now building with **React 19 / Next.js 14 (App Router) / Material UI / Tailwind 
 |---|---|
 | 💼 **Portfolio (New)** | [portfolio-upgrade-wr9n.vercel.app](https://portfolio-upgrade-wr9n.vercel.app/) |
 | 🌱 **Fundamentals Showcase** | [omar-khatab.github.io/roots-before-react/](https://omar-khatab.github.io/roots-before-react/) |
-| 📄 **CV / Resume** | [Download CV from Portfolio-Upgrade Repo](https://github.com/omar-khatab/Portfolio-Upgrade) → `Omar-Khatab-Frontend-CV-FINAL.pdf` |
+| 📄 **CV / Resume** | [Download CV from Portfolio-Upgrade Repo](https://github.com/omar-khatab/Portfolio_Upgrade/blob/main/omar%20essam%20khatab%20frontend%20developer.pdf) → `Omar-essam-khatab-frontend-developer.pdf` |
 | 💻 **GitHub** | [github.com/omar-khatab](https://github.com/omar-khatab) |
 | 🔗 **LinkedIn** | [linkedin.com/in/omar-essam-319c](https://www.linkedin.com/in/omar-essam-319c/) |
 | 📧 **Email** | omareessam0870@gmail.com |
@@ -82,15 +82,6 @@ Now building with **React 19 / Next.js 14 (App Router) / Material UI / Tailwind 
 ✅ Semantic HTML5, BEM Architecture  
 ✅ Flexbox + Grid, Responsive 320px → 1920px  
 ✅ Cross-browser, Clean Code, Performance
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=omar-khatab&show_icons=true&theme=dark&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omar-khatab&layout=compact&theme=dark&hide_border=true" />
-</p>
 
 ---
 
