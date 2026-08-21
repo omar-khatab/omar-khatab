@@ -87,7 +87,7 @@ Now building with **React 19 / Next.js 14 (App Router) / Material UI / Tailwind 
 
 <p align="center">
   <b>📄 CV is inside Portfolio-Upgrade repo → Omar-Khatab-Frontend-CV-FINAL.pdf</b><br/>
-  <a href="https://github.com/omar-khatab/Portfolio-Upgrade/blob/main/Omar-Khatab-Frontend-CV-FINAL.pdf">Download CV Here</a> | 
+  <a href="https://github.com/omar-khatab/Portfolio_Upgrade/blob/main/omar%20essam%20khatab%20frontend%20developer.pdf">Download CV Here</a> | 
   <a href="https://portfolio-upgrade-wr9n.vercel.app/">Live Portfolio</a> | 
   <a href="https://omar-khatab.github.io/roots-before-react/">Roots Before React</a>
 </p>
