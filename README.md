@@ -10,13 +10,13 @@
 
 <p>
   <a href="YOUR_PORTFOLIO_URL">
-    <img src="https://img.shields.io/badge/🌐_Portfolio-Visit-111827?style=for-the-badge" />
+    <img src="https://portfolio-upgrade-wr9n.vercel.app/" />
   </a>
   <a href="YOUR_LINKEDIN_URL">
-    <img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" />
+    <img src="https://www.linkedin.com/in/omar-essam-319c/" />
   </a>
   <a href="mailto:omaressam0870@gmail.com">
-    <img src="https://img.shields.io/badge/✉️_Email-Contact-EA4335?style=for-the-badge" />
+    <img src="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" />
   </a>
 </p>
 
@@ -96,7 +96,7 @@ This phase helped me understand how layouts, responsive interfaces, reusable pat
 
 Because I wanted to understand the fundamentals of frontend development before depending on a framework.
 
-[🌱 Explore Roots Before React](YOUR_ROOTS_PROJECTS_URL)
+[🌱 Explore Roots Before React](https://omar-khatab.github.io/roots-before-react/)
 
 ---
 
@@ -123,9 +123,9 @@ A full-featured responsive e-commerce application built with React.
 `React` `React Router` `Context API` `Framer Motion`
 
 <p>
-  <a href="YOUR_ECOMMERCE_LIVE_URL">🌐 Live Demo</a>
+  <a href="https://e-commerce-three-coral-58.vercel.app/">🌐 Live Demo</a>
   •
-  <a href="YOUR_ECOMMERCE_GITHUB_URL">💻 Source Code</a>
+  <a href="https://github.com/omar-khatab/E-commerce">💻 Source Code</a>
 </p>
 
 ---
@@ -151,9 +151,9 @@ A modern SaaS landing page built using **Next.js App Router**.
 `Next.js` `React` `Tailwind CSS` `Framer Motion`
 
 <p>
-  <a href="YOUR_SAAS_LIVE_URL">🌐 Live Demo</a>
+  <a href="https://saa-s-landing-next-js-wyx7-git-ver-3448ad-omar-khatabs-projects.vercel.app/">🌐 Live Demo</a>
   •
-  <a href="YOUR_SAAS_GITHUB_URL">💻 Source Code</a>
+  <a href="https://github.com/omar-khatab/SaaS-Landing-Next.js">💻 Source Code</a>
 </p>
 
 ---
@@ -180,9 +180,9 @@ An 8-page responsive admin dashboard built from scratch.
 `HTML5` `CSS3` `JavaScript` `Flexbox` `CSS Grid`
 
 <p>
-  <a href="YOUR_DASHBOARD_LIVE_URL">🌐 Live Demo</a>
+  <a href="https://omar-khatab.github.io/Admin-Dashboard/">🌐 Live Demo</a>
   •
-  <a href="YOUR_DASHBOARD_GITHUB_URL">💻 Source Code</a>
+  <a href="https://github.com/omar-khatab/Admin-Dashboard">💻 Source Code</a>
 </p>
 
 ---
@@ -338,15 +338,15 @@ I'm currently looking for opportunities where I can:
 
 <div align="center">
 
-<a href="YOUR_PORTFOLIO_URL">
+<a href="https://portfolio-upgrade-wr9n.vercel.app/">
 <img src="https://img.shields.io/badge/🌐_Portfolio-Visit-111827?style=for-the-badge" />
 </a>
 
-<a href="YOUR_LINKEDIN_URL">
+<a href="https://www.linkedin.com/in/omar-essam-319c/">
 <img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" />
 </a>
 
-<a href="mailto:omaressam0870@gmail.com">
+<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
 <img src="https://img.shields.io/badge/✉️_Email-Contact-EA4335?style=for-the-badge" />
 </a>
 
