@@ -70,7 +70,7 @@ Now building with **React 19 / Next.js 14 (App Router) / Material UI / Tailwind 
 | **🚀 SaaS Landing Next.js** | Our Next.js Template | [Live](https://saa-s-landing-next-js-wyx7-git-ver-3448ad-omar-khatabs-projects.vercel.app/) | [Code](https://github.com/omar-khatab/SaaS-Landing-Next.js) | Next.js 14, App Router |
 | **📊 Admin Dashboard** | 8 Pages | [Live](https://omar-khatab.github.io/Admin-Dashboard/) | [Code](https://github.com/omar-khatab/Admin-Dashboard) | HTML5, Grid, Flexbox, JS |
 | **🎨 Leon Agency** | Creative Agency | [Live](https://omar-khatab.github.io/Leon-Agency/) | [Code](https://github.com/omar-khatab/Leon-Agency) | HTML5, BEM, Pixel-Perfect |
-| **💼 Portfolio Upgrade** | Current Portfolio | [Live](https://portfolio-upgrade-wr9n.vercel.app/) | [Code](https://github.com/omar-khatab/Portfolio-Upgrade) | Next.js, Tailwind |
+| **💼 Portfolio Upgrade** | Current Portfolio | [Live](https://portfolio-upgrade-wr9n.vercel.app/) | [Code](https://github.com/omar-khatab/Portfolio_Upgrade) | Next.js, Tailwind |
 
 ---
 
