@@ -9,14 +9,14 @@
 </p>
 
 <p>
-  <a href="YOUR_PORTFOLIO_URL">
-    <img src="https://portfolio-upgrade-wr9n.vercel.app/" />
+  <a href="https://portfolio-upgrade-wr9n.vercel.app/">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-Visit-111827?style=for-the-badge" />
   </a>
-  <a href="YOUR_LINKEDIN_URL">
-    <img src="https://www.linkedin.com/in/omar-essam-319c/" />
+  <a href="https://www.linkedin.com/in/omar-essam-319c/">
+    <img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" />
   </a>
-  <a href="mailto:omaressam0870@gmail.com">
-    <img src="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" />
+  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+    <img src="https://img.shields.io/badge/✉️_Email-Contact-EA4335?style=for-the-badge" />
   </a>
 </p>
 
