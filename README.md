@@ -15,7 +15,7 @@
   <a href="https://www.linkedin.com/in/omar-essam-319c/">
     <img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" />
   </a>
-  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+  <a href="mailto:omaressam0870@gmail.com">
     <img src="https://img.shields.io/badge/✉️_Email-Contact-EA4335?style=for-the-badge" />
   </a>
 </p>
