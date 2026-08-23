@@ -18,7 +18,7 @@ Building clean, fast, responsive UIs. I didn't jump to React quickly — I spent
 
 > **Before React & Next.js, mastered basics. 5 production landing pages with pure HTML5/CSS3/JS — no frameworks. Includes Leon, Kasper, Digital, Gonex Design, Special Agency. Each focuses on different skills: modern UI, advanced responsive, animations, final HTML/CSS mastery before React. Proves strong fundamentals: Semantic HTML5, BEM, Flexbox + Grid, Responsive 320px→1920px.**
 
-Now building with **React 19 / Next.js 14 (App Router) / Material UI / Tailwind CSS / Framer Motion / Context API**
+Now building with **React 19 / Next.js (App Router) / Material UI / Tailwind CSS / Framer Motion / Context API**
 
 - 🔭 Currently working on **E-Commerce Store** with React + Context + Framer Motion
 - 🌱 Learning **TypeScript, Next.js 14, Advanced MUI**
