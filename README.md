@@ -241,18 +241,6 @@ An 8-page responsive admin dashboard built from scratch.
 
 ---
 
-# 📊 GitHub Statistics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=omar-khatab&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omar-khatab&layout=compact&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
 # 🔥 GitHub Streak
 
 <div align="center">
