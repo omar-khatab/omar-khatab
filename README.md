@@ -1,95 +1,377 @@
-<h1 align="center">Hi 👋, I'm Omar Khatab</h1>
-<h3 align="center">Frontend Developer | React / Next.js / Material UI</h3>
+<div align="center">
 
-<p align="center">
-  <a href="https://portfolio-upgrade-wr9n.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Live-000?style=for-the-badge&logo=vercel" /></a>
-  <a href="https://omar-khatab.github.io/roots-before-react/"><img src="https://img.shields.io/badge/Roots_Before_React-7_Projects-0a58ca?style=for-the-badge" /></a>
-  <a href="https://github.com/omar-khatab/Portfolio_Upgrade/blob/main/omar%20essam%20khatab%20frontend%20developer.pdf"><img src="https://img.shields.io/badge/CV-Download-red?style=for-the-badge&logo=adobeacrobatreader" /></a>
-  <a href="https://www.linkedin.com/in/omar-essam-319c/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" /></a>
+# 👋 Hi, I'm Omar Khatab
+
+### Frontend Developer • React.js • Next.js
+
+<p>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=61DAFB&center=true&vCenter=true&width=700&lines=Building+Modern+Web+Experiences;React.js+%7C+Next.js+Developer;From+HTML%2FCSS%2FJS+to+Modern+Frontend;Always+Learning%2C+Always+Building+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
----
+<p>
+  <a href="YOUR_PORTFOLIO_URL">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-Visit-111827?style=for-the-badge" />
+  </a>
+  <a href="YOUR_LINKEDIN_URL">
+    <img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" />
+  </a>
+  <a href="mailto:omaressam0870@gmail.com">
+    <img src="https://img.shields.io/badge/✉️_Email-Contact-EA4335?style=for-the-badge" />
+  </a>
+</p>
 
-### 🚀 About Me
+<br>
 
-**Mechanical Power Engineer (Ain Shams 2019-2024, GPA 2.85) → Frontend Developer**
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind,git,github" />
 
-Building clean, fast, responsive UIs. I didn't jump to React quickly — I spent 2 years mastering pure HTML5/CSS3/JS first.
+<br><br>
 
-> **Before React & Next.js, mastered basics. 5 production landing pages with pure HTML5/CSS3/JS — no frameworks. Includes Leon, Kasper, Digital, Gonex Design, Special Agency. Each focuses on different skills: modern UI, advanced responsive, animations, final HTML/CSS mastery before React. Proves strong fundamentals: Semantic HTML5, BEM, Flexbox + Grid, Responsive 320px→1920px.**
+**📍 Cairo, Egypt**   •   **🎯 Open to Junior & Internship Opportunities**
 
-Now building with **React 19 / Next.js (App Router) / Material UI / Tailwind CSS / Framer Motion / Context API**
-
-- 🔭 Currently working on **E-Commerce Store** with React + Context + Framer Motion
-- 🌱 Learning **TypeScript, Next.js 14, Advanced MUI**
-- 💼 Looking for **Frontend roles in software companies**
-- 📍 Cairo, Egypt | 📞 01278358368
-- ⚡ Fun fact: **Thermodynamics → Clean Code** — Engineering mindset makes my code different
-
----
-
-### 🔗 Quick Links
-
-| | Link |
-|---|---|
-| 💼 **Portfolio (New)** | [portfolio-upgrade-wr9n.vercel.app](https://portfolio-upgrade-wr9n.vercel.app/) |
-| 🌱 **Fundamentals Showcase** | [omar-khatab.github.io/roots-before-react/](https://omar-khatab.github.io/roots-before-react/) |
-| 📄 **CV / Resume** | [Download CV from Portfolio-Upgrade Repo](https://github.com/omar-khatab/Portfolio_Upgrade/blob/main/omar%20essam%20khatab%20frontend%20developer.pdf) → `Omar-essam-khatab-frontend-developer.pdf` |
-| 💻 **GitHub** | [github.com/omar-khatab](https://github.com/omar-khatab) |
-| 🔗 **LinkedIn** | [linkedin.com/in/omar-essam-319c](https://www.linkedin.com/in/omar-essam-319c/) |
-| 📧 **Email** | omareessam0870@gmail.com |
+</div>
 
 ---
+
+> **Building from strong fundamentals — from Vanilla JavaScript to React and Next.js.**
+>
+> I combine a **Mechanical Power Engineering background** with frontend development to approach problems with analytical thinking, structure, and attention to detail.
+
+---
+
+## 🚀 About Me
+
+I'm a Frontend Developer focused on building **clean, responsive, and maintainable web applications**.
+
+My journey started with the fundamentals of:
+
+**HTML5 → CSS3 → JavaScript → React → Next.js**
+
+Before moving into React, I deliberately built multiple projects using vanilla technologies to understand the fundamentals behind modern frontend development.
+
+### What I work with
+
+* ⚛️ React.js
+* ▲ Next.js
+* 💻 JavaScript (ES6+)
+* 🎨 Tailwind CSS
+* 🧩 Material UI
+* 🎬 Framer Motion
+* 🔌 REST API Integration
+* 🗂️ Context API
+* 🔧 Git & GitHub
+
+### Currently Developing
+
+* Advanced React
+* Next.js
+* TypeScript
+* Frontend Architecture
+* Performance Optimization
+
+---
+
+# 🌱 Roots Before React
+
+> **Strong fundamentals first. Frameworks second.**
+
+Before adopting React, I spent time building frontend projects using **pure HTML5, CSS3, and JavaScript**.
+
+This phase helped me understand how layouts, responsive interfaces, reusable patterns, and browser behavior work before relying on a framework.
+
+### 🧱 The 5 Fundamentals Projects
+
+| Project              | Main Focus                       |
+| -------------------- | -------------------------------- |
+| 🏠 **Leon**          | HTML5 • CSS3 • Responsive Design |
+| 🎨 **Kasper**        | HTML5 • CSS3 • Flexbox           |
+| 💻 **Digital**       | HTML5 • CSS3 • CSS Grid          |
+| 🚀 **Gonex**         | Responsive UI • CSS              |
+| ✨ **Special Design** | HTML5 • CSS3 • JavaScript        |
+
+### Skills Built
+
+`Semantic HTML5` `CSS3` `BEM` `Flexbox` `CSS Grid` `Responsive Design` `PSD to HTML` `Vanilla JavaScript`
+
+**Why did I call it "Roots Before React"?**
+
+Because I wanted to understand the fundamentals of frontend development before depending on a framework.
+
+[🌱 Explore Roots Before React](YOUR_ROOTS_PROJECTS_URL)
+
+---
+
+# ⚛️ Featured Projects
+
+## 🛒 E-Commerce Store — React
+
+A full-featured responsive e-commerce application built with React.
+
+### ✨ Features
+
+* 🛍️ Product listing
+* 📦 Product details
+* 🛒 Shopping cart
+* ❤️ Wishlist
+* 🔎 Product filtering
+* 🗂️ Global state management with Context API
+* 📱 Mobile-first responsive design
+* 🎬 Framer Motion animations
+* ♻️ Reusable React components
 
 ### 🛠️ Tech Stack
 
+`React` `React Router` `Context API` `Framer Motion`
+
 <p>
-  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=000" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Material_UI-007FFF?style=flat&logo=mui&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+  <a href="YOUR_ECOMMERCE_LIVE_URL">🌐 Live Demo</a>
+  •
+  <a href="YOUR_ECOMMERCE_GITHUB_URL">💻 Source Code</a>
 </p>
 
-**Core:** React.js, Next.js (App Router, Server Components), JavaScript ES6+, HTML5/CSS3  
-**UI:** Material UI (MUI), Tailwind CSS, Framer Motion, BEM, Flexbox + Grid  
-**Tools:** Git, GitHub, Vercel, REST API, Context API, PSD to HTML, Clean Code
-
 ---
 
-### 📌 Pinned Projects — Live Demo & Code
+## ▲ SaaS Landing — Next.js
 
-| Project | Type | Live Demo | Code | Stack |
-|---|---|---|---|---|
-| **🛒 E-Commerce Store** | Featured | [Live](https://e-commerce-three-coral-58.vercel.app/) | [Code](https://github.com/omar-khatab/E-commerce) | React, Context API, Framer Motion |
-| **🌱 Roots Before React** | 7 Projects Showcase | [Live](https://omar-khatab.github.io/roots-before-react/) | [Code](https://github.com/omar-khatab/roots-before-react) | Pure HTML/CSS/JS — No Frameworks |
-| **🚀 SaaS Landing Next.js** | Our Next.js Template | [Live](https://saa-s-landing-next-js-wyx7-git-ver-3448ad-omar-khatabs-projects.vercel.app/) | [Code](https://github.com/omar-khatab/SaaS-Landing-Next.js) | Next.js 14, App Router |
-| **📊 Admin Dashboard** | 8 Pages | [Live](https://omar-khatab.github.io/Admin-Dashboard/) | [Code](https://github.com/omar-khatab/Admin-Dashboard) | HTML5, Grid, Flexbox, JS |
-| **🎨 Leon Agency** | Creative Agency | [Live](https://omar-khatab.github.io/Leon-Agency/) | [Code](https://github.com/omar-khatab/Leon-Agency) | HTML5, BEM, Pixel-Perfect |
-| **💼 Portfolio Upgrade** | Current Portfolio | [Live](https://portfolio-upgrade-wr9n.vercel.app/) | [Code](https://github.com/omar-khatab/Portfolio_Upgrade) | Next.js, Tailwind |
+A modern SaaS landing page built using **Next.js App Router**.
 
----
+### ✨ Features
 
-### 💪 Why I'm Different
+* 🚀 Modern SaaS layout
+* 🔍 SEO-friendly structure
+* 📱 Responsive design
+* ⚡ Next.js App Router
+* 🧩 React Server Components
+* 💰 Pricing section
+* ⭐ Testimonials
+* ❓ FAQ
+* 🎬 Smooth-scroll animations
 
-> Most developers jump to React fast. I spent 2 years mastering HTML, CSS, JavaScript — so I understand how the web really works. This makes my React code cleaner, more semantic, better performance, easier to debug.
+### 🛠️ Tech Stack
 
-✅ PSD/Figma to HTML — Pixel Perfect  
-✅ Semantic HTML5, BEM Architecture  
-✅ Flexbox + Grid, Responsive 320px → 1920px  
-✅ Cross-browser, Clean Code, Performance
+`Next.js` `React` `Tailwind CSS` `Framer Motion`
 
----
-
-<p align="center">
-  <b>📄 CV is inside Portfolio-Upgrade repo → Omar-Khatab-Frontend-CV-FINAL.pdf</b><br/>
-  <a href="https://github.com/omar-khatab/Portfolio_Upgrade/blob/main/omar%20essam%20khatab%20frontend%20developer.pdf">Download CV Here</a> | 
-  <a href="https://portfolio-upgrade-wr9n.vercel.app/">Live Portfolio</a> | 
-  <a href="https://omar-khatab.github.io/roots-before-react/">Roots Before React</a>
+<p>
+  <a href="YOUR_SAAS_LIVE_URL">🌐 Live Demo</a>
+  •
+  <a href="YOUR_SAAS_GITHUB_URL">💻 Source Code</a>
 </p>
 
-<p align="center">Built with ❤️ by Omar Khatab — Frontend Developer with engineering mindset</p>
+---
+
+## 📊 Admin Dashboard Panel
+
+An 8-page responsive admin dashboard built from scratch.
+
+### 📄 Pages
+
+`Overview` `Projects` `Courses` `File Manager` `Friends` `Pricing` `Profile` `Settings`
+
+### ✨ Features
+
+* 📈 Statistics cards
+* 📊 Progress tracking
+* 🔎 Filterable data tables
+* 📁 File-upload UI
+* 📱 Responsive layout
+* 🧩 Structured UI components
+
+### 🛠️ Tech Stack
+
+`HTML5` `CSS3` `JavaScript` `Flexbox` `CSS Grid`
+
+<p>
+  <a href="YOUR_DASHBOARD_LIVE_URL">🌐 Live Demo</a>
+  •
+  <a href="YOUR_DASHBOARD_GITHUB_URL">💻 Source Code</a>
+</p>
+
+---
+
+# 🧭 My Frontend Journey
+
+```text
+              🌐 WEB FUNDAMENTALS
+                       │
+                       ▼
+              HTML5 + CSS3 + JS
+                       │
+                       ▼
+             🌱 ROOTS BEFORE REACT
+                       │
+                       ▼
+                  ⚛️ REACT
+                       │
+                       ▼
+                 ▲ NEXT.JS
+                       │
+                       ▼
+                🟦 TYPESCRIPT
+                       │
+                       ▼
+          🚀 PRODUCTION-READY FRONTEND
+```
+
+---
+
+# 🛠️ Tech Stack
+
+### Languages & Core
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js" />
+</p>
+
+### Frameworks & Libraries
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs" />
+</p>
+
+**Also:** Material UI • Tailwind CSS • Framer Motion
+
+### State & Data
+
+`Context API` `REST APIs`
+
+### Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vercel,vscode" />
+</p>
+
+---
+
+# 📊 GitHub Statistics
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=omar-khatab&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omar-khatab&layout=compact&theme=tokyonight&hide_border=true" />
+
+</div>
+
+---
+
+# 🔥 GitHub Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=omar-khatab&theme=tokyonight&hide_border=true" />
+
+</div>
+
+---
+
+# 📈 Contribution Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=omar-khatab&theme=tokyo-night&hide_border=true&area=true" />
+
+</div>
+
+---
+
+# 📚 Currently Learning
+
+```text
+Advanced React
+      │
+      ▼
+   Next.js
+      │
+      ▼
+ TypeScript
+      │
+      ▼
+Frontend Architecture
+      │
+      ▼
+Performance Optimization
+      │
+      ▼
+Real-World Applications
+```
+
+My goal is to move beyond simply building interfaces and become capable of building **well-structured, reusable, maintainable frontend applications**.
+
+---
+
+# ⚙️ Engineering Background
+
+Before transitioning into software development, I studied **Mechanical Power Engineering at Ain Shams University**.
+
+My engineering background developed my:
+
+* 🧠 Analytical thinking
+* 🔍 Problem-solving
+* ⚙️ Systems thinking
+* 📐 Attention to detail
+* 🧩 Structured technical thinking
+
+### Engineering Experience
+
+**National Authority for Tunnels**
+HVAC Systems
+
+**Arab Contractors**
+IC Engines
+
+### Graduation Projects
+
+**Pitch System Control**
+
+**Solar Cell Cooling System**
+15% efficiency improvement
+
+---
+
+# 🎯 What I'm Looking For
+
+I'm currently looking for opportunities where I can:
+
+* Build real-world frontend applications
+* Work with experienced developers
+* Contribute to production projects
+* Improve my React and Next.js skills
+* Learn professional development workflows
+* Grow into a strong professional Frontend Developer
+
+### Open to
+
+**Junior Frontend Developer**
+**React Developer**
+**Frontend Internship**
+
+---
+
+# 📫 Let's Connect
+
+<div align="center">
+
+<a href="YOUR_PORTFOLIO_URL">
+<img src="https://img.shields.io/badge/🌐_Portfolio-Visit-111827?style=for-the-badge" />
+</a>
+
+<a href="YOUR_LINKEDIN_URL">
+<img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" />
+</a>
+
+<a href="mailto:omaressam0870@gmail.com">
+<img src="https://img.shields.io/badge/✉️_Email-Contact-EA4335?style=for-the-badge" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=omar-khatab&style=flat-square&label=Profile+Views" />
+
+<br><br>
+
+### 🚀 Build. Learn. Improve.
+
+</div>
