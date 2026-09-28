@@ -1,0 +1,195 @@
+<div class = "full-banner" id="full-banner-{{ section.id }}">
+    <div class="my-banner">
+        <div class="header">
+            {% comment %}  Burger Icon for Mobile - Toggles menu {% endcomment %}
+            <div class="burger-icon" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle menu">
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 11H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="hide">
+                    <path d="M1 13.9994L13.7279 1.27147" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1L13.7279 13.7279" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            {% comment %}  Mobile Menu Content - Shows when burger clicked {% endcomment %}
+            <div class="banner-content">
+                <p>{{ section.settings.small_text }}</p>
+                    <a href="{{ section.settings.gift_link }}">{{ section.settings.gift_btn }}
+                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M0.75 4.77298L7.37629e-08 4.77298L-7.37629e-08 6.27298L0.75 6.27298L0.75 4.77298ZM25.2803 6.05331C25.5732 5.76042 25.5732 5.28554 25.2803 4.99265L20.5074 0.21968C20.2145 -0.073213 19.7396 -0.0732131 19.4467 0.21968C19.1538 0.512574 19.1538 0.987447 19.4467 1.28034L23.6893 5.52298L19.4467 9.76562C19.1538 10.0585 19.1538 10.5334 19.4467 10.8263C19.7396 11.1192 20.2145 11.1192 20.5074 10.8263L25.2803 6.05331ZM0.75 6.27298L24.75 6.27298L24.75 4.77298L0.75 4.77298L0.75 6.27298Z"/>
+                    </svg>
+                </a>
+            </div>
+            {% comment %}  Logo Section - With fallback to assets {% endcomment %}
+            <div class="logo">
+            {% comment %} If user uploaded logo in customize, show it, otherwise show default from assets {% endcomment %}
+            {% if section.settings.logo != blank %}
+                <img src="{{ section.settings.logo | image_url: width: 300 }}" alt="logo" width="150" height="19" >
+            {% else %}
+                <img src="{{ 'logo-default.svg' | asset_url }}" alt="logo" width="150" height="19" >
+            {% endif %}
+            </div>
+            {% comment %}  Header Text & Link - Desktop Only {% endcomment %}
+            <p class="header-text">{{ section.settings.small_text }}</p>
+            <a href="{{ section.settings.gift_link }}" class="header-link">{{ section.settings.gift_btn }}
+                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M0.75 4.77298L7.37629e-08 4.77298L-7.37629e-08 6.27298L0.75 6.27298L0.75 4.77298ZM25.2803 6.05331C25.5732 5.76042 25.5732 5.28554 25.2803 4.99265L20.5074 0.21968C20.2145 -0.073213 19.7396 -0.0732131 19.4467 0.21968C19.1538 0.512574 19.1538 0.987447 19.4467 1.28034L23.6893 5.52298L19.4467 9.76562C19.1538 10.0585 19.1538 10.5334 19.4467 10.8263C19.7396 11.1192 20.2145 11.1192 20.5074 10.8263L25.2803 6.05331ZM0.75 6.27298L24.75 6.27298L24.75 4.77298L0.75 4.77298L0.75 6.27298Z"/>
+                </svg>
+            </a>
+        </div>
+        {% comment %}  Main Banner Content {% endcomment %}
+        <div class="main-content">
+        {% comment %} Main Pattern Images - Fallback to default asset if not set {% endcomment %}
+        {% comment %} Image 1 - Top pattern - independent picker {% endcomment %}
+        {% if section.settings.pattern_image_1 != blank %}
+            <img src="{{ section.settings.pattern_image_1 | image_url: width: 2000 }}" alt="{{ section.settings.pattern_image_1.alt | default: 'banner pattern' }}" class="img-top" width="{{ section.settings.pattern_image_1.width }}" height="{{ section.settings.pattern_image_1.height }}" >
+        {% else %}
+            {% comment %} Default images from assets folder - replace 'banner-default.png' with your actual file name {% endcomment %}
+            <img src="{{ 'banner-default.png' | asset_url }}" alt="banner pattern top" class="img-top" width="1920" height="800" >
+        {% endif %}
+
+        {% comment %} Image 2 - Bottom pattern - independent picker {% endcomment %}
+        {% if section.settings.pattern_image_2 != blank %}
+            <img src="{{ section.settings.pattern_image_2 | image_url: width: 2000 }}" alt="{{ section.settings.pattern_image_2.alt | default: 'banner pattern' }}" class="img-bottom" width="{{ section.settings.pattern_image_2.width }}" height="{{ section.settings.pattern_image_2.height }}"  aria-hidden="true">
+        {% else %}
+            {% comment %} Default images from assets folder - replace 'banner-default.png' with your actual file name {% endcomment %}
+            <img src="{{ 'banner-default.png' | asset_url }}" alt="banner pattern bottom" class="img-bottom" width="1920" height="800"  aria-hidden="true">
+        {% endif %}
+        {% comment %}  Main Title & CTA {% endcomment %}
+            <div class="main-title">
+                <h1>{{ section.settings.main_heading }}</h1>
+                <p class="text-desktop">{{ section.settings.main_text_desktop }}</p>
+                <p class="text-mobile">{{ section.settings.main_text_mobile }}</p>
+                <a href="{{ section.settings.main_link }}">{{section.settings.main_btn }}
+                    <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M0.75 4.77295L7.83954e-08 4.77295L-7.83954e-08 6.27295L0.75 6.27295L0.75 4.77295ZM26.7876 6.05328C27.0805 5.76039 27.0805 5.28551 26.7876 4.99262L22.0146 0.21965C21.7217 -0.0732435 21.2468 -0.0732435 20.9539 0.21965C20.6611 0.512543 20.6611 0.987417 20.9539 1.28031L25.1966 5.52295L20.9539 9.76559C20.6611 10.0585 20.6611 10.5334 20.9539 10.8263C21.2468 11.1191 21.7217 11.1191 22.0146 10.8263L26.7876 6.05328ZM0.75 6.27295L26.2572 6.27295L26.2572 4.77295L0.75 4.77295L0.75 6.27295Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% comment %}  Footer Text - Different for desktop & mobile {% endcomment %}
+    <p class="footer-banner desktop">{{ section.settings.footer_text_desktop }}</p>
+    <p class="footer-banner mobile">{{ section.settings.footer_text_mobile }}</p>
+</div>
+
+<style>
+     /* Main Banner Wrapper */
+    #full-banner-{{ section.id }} { font-family: Jost, sans-serif; overflow: hidden; }
+
+     /* Header Styles */
+    #full-banner-{{ section.id }} .my-banner .header {background: #F5F5F5;display: flex;justify-content: space-between; align-items:center;height: 84px;position: relative;z-index:2000;}
+    #full-banner-{{ section.id }} .my-banner .header .logo{display:flex;align-items:center;cursor: pointer;}
+    #full-banner-{{ section.id }} .my-banner .header .banner-content{display:none;}
+    #full-banner-{{ section.id }} .my-banner .header .burger-icon{display:none;}
+    #full-banner-{{ section.id }} .my-banner .header h1 {font-size: 28px;font-weight: bold;}
+    #full-banner-{{ section.id }} .my-banner .header p {font-size: 16px;line-height: 13.42px;text-align: center;}
+
+    /* Header Button with Hover Animation */
+    #full-banner-{{ section.id }} .my-banner .header a {text-decoration: none;background: #FFF544;font-size: 18px;padding: 10px 30px;display: flex;gap: 20px;text-transform: uppercase;align-items: center;color: #000000; position: relative;z-index: 2;width:fit-content;}
+    #full-banner-{{ section.id }} .my-banner .header a::before {content: '';position: absolute;width:0;height: 100%;top: 0;left: 0;background: #000000;transition: 0.5s;z-index: -1;}
+    #full-banner-{{ section.id }} .my-banner .header a:hover::before {width: 100%;}
+    #full-banner-{{ section.id }} .my-banner .header a:hover {color: #ffff;}
+
+    /* Main Content Area */
+    #full-banner-{{ section.id }} .my-banner .main-content {width: 100%;height: 780px;position: relative;overflow: hidden;}
+    #full-banner-{{ section.id }} .my-banner .main-content .img-top { position: absolute; top: -140px; width: 100%; height: 70%;}
+    #full-banner-{{ section.id }} .my-banner .main-content .img-bottom { position: absolute; width: 120%; height: 65%; left: 40%; bottom: -120px;}
+
+    /* Title & Text */
+    #full-banner-{{ section.id }} .main-title {position: absolute;bottom: 80px;max-width: 450px;font-size: 20px;line-height: 140%;left: 67px;color: #000000;}
+    #full-banner-{{ section.id }} .main-title h1 {font-size: 70px;line-height: 100%;}
+    #full-banner-{{ section.id }} .main-title p.text-desktop {font-size: 20px;line-height: 140%;}
+    #full-banner-{{ section.id }} .main-title p.text-mobile {display:none;} /* Hidden on desktop */
+
+    /* Main CTA Button */
+    #full-banner-{{ section.id }} .main-title a {background: #000000;color: white;text-decoration: none;width: 220px;text-align: center;font-size: 16px;padding: 10px 20px;position: relative;z-index: 2;  display: flex;gap: 20px;text-transform: uppercase;align-items: center;justify-content: center;}
+    #full-banner-{{ section.id }} .main-title a::before {content: '';position: absolute;width:0;height: 100%;top: 0;left: 0;background: #FFF544;transition: 0.5s;z-index: -1;}
+    #full-banner-{{ section.id }} .main-title a:hover::before {width: 100%;}
+    #full-banner-{{ section.id }} .main-title a:hover {color: #000000;}
+
+    /* Footer */
+    #full-banner-{{ section.id }} .footer-banner {background: #F5F5F5;font-size:16px; text-align:center;color: #000000;margin:0;}
+    #full-banner-{{ section.id }} .footer-banner.mobile {display:none}
+
+    /* Responsive - Mobile */
+    @media(max-width:768px){
+    #full-banner-{{ section.id }} .my-banner .header{background:#F7F7F7;}
+    #full-banner-{{ section.id }} .my-banner .header .banner-content.show{display: flex;align-items: center;flex-direction: column;gap: 5px;width: 100%;background: #F2F2F2;position: absolute;bottom: -140px;left: 0;padding:20px 0;}
+    #full-banner-{{ section.id }} .my-banner .header .burger-icon{display:block;}
+    #full-banner-{{ section.id }} .my-banner .header .logo{margin:auto;}
+    #full-banner-{{ section.id }} .my-banner .header .header-text,
+    #full-banner-{{ section.id }} .my-banner .header .header-link {display:none;}
+    #full-banner-{{ section.id }} .my-banner .main-content{height:421px}
+    #full-banner-{{ section.id }} .my-banner .main-content .img-top {width:170%;top:150px;left:50%;transform:translateX(-50%);}
+    #full-banner-{{ section.id }} .my-banner .main-content .img-bottom {display:none;}
+    #full-banner-{{ section.id }} .main-title {text-align:center;position:static;padding: 20px;margin:auto;}
+    #full-banner-{{ section.id }} .main-title h1 {font-size:30px}
+    #full-banner-{{ section.id }} .main-title a {position:absolute;top:337px;left:50%;transform:translateX(-50%)}
+    #full-banner-{{ section.id }} .main-title p.text-desktop {display:none;}
+    #full-banner-{{ section.id }} .main-title p.text-mobile {display:block;font-size:16px;line-height: 130%;}
+    #full-banner-{{ section.id }} .footer-banner.desktop{display:none;}
+    #full-banner-{{ section.id }} .footer-banner.mobile{display:block;font-size:14px;}
+    }
+    #full-banner-{{ section.id }} .hide {display:none;} /* Utility class to hide elements */
+</style>
+
+<script>
+    // Burger Menu Toggle Logic - Wrapped in IIFE to avoid polluting global scope
+    // Using section.id to scope querySelectors - prevents conflicts if section is used multiple times
+    (function() {
+        const sectionRoot = document.getElementById('full-banner-{{ section.id }}');
+        if (!sectionRoot) return; // Safety check - stop if section not found
+
+        // Scoped selectors - only search inside this section instance
+        const burgerIcon = sectionRoot.querySelector('.burger-icon');
+        const headerSVG = sectionRoot.querySelectorAll('.burger-icon svg');
+        const bannerContent = sectionRoot.querySelector('.banner-content');
+        
+        if (burgerIcon && bannerContent) {
+            const toggleMenu = function () {
+            bannerContent.classList.toggle('show'); // Show/hide mobile menu
+            headerSVG.forEach((e) => e.classList.toggle('hide')); // Toggle burger/close icons
+
+            // Accessibility improvement - tells screen readers if menu is open
+            const isExpanded = bannerContent.classList.contains('show');
+            burgerIcon.setAttribute('aria-expanded', isExpanded);
+        };
+
+        burgerIcon.addEventListener('click', toggleMenu);
+
+        // Keyboard support for accessibility
+        burgerIcon.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleMenu();
+            }
+        });
+    }
+    })();
+</script>
+
+
+{% schema %}
+{
+    "name": "Full Banner",
+    "settings": [
+        { "type": "image_picker", "id": "logo", "label": "Logo" },
+        { "type": "text", "id": "small_text", "label": "Small Text", "default": "Find the ideal gift for your loved ones." },
+        { "type": "url", "id": "gift_link", "label": "Heading Link" },
+        { "type": "text", "id": "gift_btn", "label": "Button Text", "default": "choose gift" },
+        { "type": "text", "id": "main_heading", "label": "Main Heading", "default": "The Gift Guide" },
+        { "type": "textarea", "id": "main_text_desktop", "label": "Main Text Desktop", "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season." },
+        { "type": "textarea", "id": "main_text_mobile", "label": "Main Text Mobile", "default": "Discover Joy: Your Ultimate Holiday Gift Destination." },
+        { "type": "url", "id": "main_link", "label": "Main Link" },
+        { "type": "text", "id": "main_btn", "label": "Main Button Text", "default": "shop Now" },
+        { "type": "text", "id": "footer_text_desktop", "label": "Footer Text Desktop", "default": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL" },
+        { "type": "text", "id": "footer_text_mobile", "label": "Footer Text Mobile", "default": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR" },
+        { "type": "image_picker", "id": "pattern_image_1", "label": "Main Image 1" },
+        { "type": "image_picker", "id": "pattern_image_2", "label": "Main Image 2" }
+    ],
+    "presets": [{ "name": "Full Banner" }]
+}
+{% endschema %}
