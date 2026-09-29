@@ -47,9 +47,7 @@
           </div>
         </div>
           {% comment %} Variants container - injected via JS but container exists in HTML for Figma CSS alignment {% endcomment %}
-        <div id="PopupVariants-{{ section.id }}">
-          
-        </div>
+        <div id="PopupVariants-{{ section.id }}"></div>
       </div>
         {% comment %} Add to cart form - sends variant id + quantity to /cart/add.js {% endcomment %}
       <form id="PopupForm-{{ section.id }}" class="popup-form">
@@ -82,11 +80,10 @@
 }
 
 /* Popup overlay - hidden by default */
-
 #product-grid-{{ section.id }} .popup-overlay {position: fixed; inset: 0;background: rgba(0,0,0,0.6);display: none;align-items: center; justify-content: center;z-index: 9999;}
 #product-grid-{{ section.id }} .popup-overlay.show { display: flex; }
 
-/* Popup card same size as Figma */
+/* Popup card */
 #product-grid-{{ section.id }} .popup-content {background: #fff; position: relative; padding: 20px;max-width: 350px;max-height: 447px;}
 #product-grid-{{ section.id }} .popup-close {position: absolute; top: 10px; right: 10px;background: none; border: none; font-size: 30px; cursor: pointer;}
 #product-grid-{{ section.id }} .popup-body { display: flex; flex-direction: column; margin-bottom: 20px;}
@@ -97,9 +94,14 @@
 #product-grid-{{ section.id }} .popup-body .popup-text p { font-family: Jost;font-weight: 300;font-style: Light;font-size: 14px; margin: 0;}
 #product-grid-{{ section.id }} .popup-body .popup-text div {font-family: Jost;font-weight: 300;font-style: Light;font-size: 13px;line-height: 110%;}
 
-/* Reverse order to show Color above Size like Figma */
+/* Variants wrapper - reversed to show Color above Size per Figma layout */
 #PopupVariants-{{ section.id }} {display: flex;flex-direction: column-reverse;gap: 5px;}
-
+{% comment %} Variant row for Color option {% endcomment %}
+#PopupVariants-{{ section.id }} .color {display: flex}
+{% comment %} Variant row for Size option {% endcomment %}
+#PopupVariants-{{ section.id }} .size {display: flex;gap: 5px;}
+{% comment %} for buttons of variant {% endcomment %}
+#PopupVariants-{{ section.id }} div button {padding:6px 12px; border:1px solid #000; background:#fff; cursor:pointer;}
 </style>
 
 
@@ -109,6 +111,7 @@
   const sectionRoot = document.getElementById('product-grid-{{ section.id }}');
   if (!sectionRoot) return;
 
+ // Cache DOM elements for popup
   const overlay = document.getElementById('PopupOverlay-{{ section.id }}');
   const popupImage = document.getElementById('PopupImage-{{ section.id }}');
   const popupTitle = document.getElementById('PopupTitle-{{ section.id }}');
@@ -142,20 +145,26 @@
       popupImage.src = productData.image;
       popupDesc.innerHTML = productData.description;
 
+      // Reset selection state and variant UI
       selectedOptions = [];
       variantsWrap.innerHTML = '';
 
       // Loop through product options (e.g., Color, Size) and build buttons
       productData.options.forEach((optName, optIndex) => {
         const values = [...new Set(productData.variants.map(v => v['option'+(optIndex+1)]))];
+        // Create wrapper for each option type (Color / Size)
         const div = document.createElement('div');
-        div.innerHTML = `<strong>${optName}:</strong><div style="display:flex; gap:6px; margin-top:6px; flex-wrap:wrap;"></div>`;
+        const span = document.createElement('span');
+        const options = document.createElement('div');
+        span.textContent = optName;
+        options.className = optName.toLowerCase();
+        div.appendChild(span);
+        div.appendChild(options);
         const list = div.querySelector('div:last-child');
-
+         // Create button for each option value
         values.forEach(val => {
           const b = document.createElement('button');
           b.type='button'; b.textContent=val;
-          b.style.cssText='padding:6px 12px; border:1px solid #000; background:#fff; cursor:pointer;';
           // On select: highlight button, save selection, find matching variant
           b.onclick = ()=>{
             list.querySelectorAll('button').forEach(x=>{x.style.background='#fff'; x.style.color='#000';});
@@ -174,17 +183,21 @@
         div.querySelector('button')?.click(); // Auto-select first value
       });
 
+       // Show popup and lock body scroll
       overlay.classList.add('show');
       document.body.style.overflow = 'hidden'; // Prevent background scroll
     });
   });
 
+  // Close popup handler - restores body scroll
   function closePopup() {
     overlay.classList.remove('show');
     document.body.style.overflow = 'auto';
   }
   closeBtn.addEventListener('click', closePopup);
+  // Close when clicking outside popup content
   overlay.addEventListener('click', function(e) { if (e.target === overlay) closePopup(); });
+    // Close on ESC key
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && overlay.classList.contains('show')) closePopup(); });
 
   // Handle add to cart + special condition Black + Medium
@@ -220,6 +233,7 @@
         }
       })
       .then(()=>{
+        // Show success feedback
         popupMessage.textContent = hasBlack && hasMedium? '✓ Added + Dark Winter Jacket auto-added!' : '✓ Added to cart!';
         popupMessage.style.display = 'block';
         popupMessage.style.color = 'green';
