@@ -1,0 +1,259 @@
+<div class="product-grid-section" id="product-grid-{{ section.id }}">
+  <h3 class="wrapper-head">Tisso vison in the wild</h3>
+  <div class="grid-wrapper">
+    {% for block in section.blocks %}
+      {% assign product = block.settings.product %}
+      {% if product != blank %}
+        {% comment %} Store product data as JSON for popup - no extra API call needed {% endcomment %}
+        <div class="product-card" 
+          data-product=
+          '{"title": {{ product.title | json }}, 
+            "price_formatted": {{ product.price | money | json }}, 
+            "image": {{ product.featured_image | image_url: width: 600 | json }}, 
+            "description": {{ product.description | strip_html | truncate: 200 | json }}, 
+            "variants": {{ product.variants | json }},
+            "options": {{ product.options | json }},
+            "handle": {{ product.handle | json }} }'
+            {{ block.shopify_attributes }}>
+            <div class="product-image">
+              <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}" loading="lazy" 
+                width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}">
+                {% comment %} Small circle button - shows on hover and opens the popup {% endcomment %}
+              <button class="circle-btn">+</button>
+            </div>
+        </div>
+      {% else %}
+      {% comment %} Placeholder when merchant hasn't selected a product yet {% endcomment %}
+        <div class="product-card empty">
+          <div class="product-image" style="background:#f5f5f5;" height="400"></div>
+          <p>choose a product</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+{% comment %} Popup , image + info on top {% endcomment %}
+  <div class="popup-overlay" id="PopupOverlay-{{ section.id }}">
+    <div class="popup-content" role="dialog" aria-modal="true">
+      <button class="popup-close" aria-label="Close">&times;</button>
+      <div class="popup-body">
+        {% comment %} Top section: product image left + title/price/desc right {% endcomment %}
+        <div class="popup-info">
+          <img id="PopupImage-{{ section.id }}" src="" alt="">
+          <div class="popup-text">
+            <h2 id="PopupTitle-{{ section.id }}"></h2>
+            <p id="PopupPrice-{{ section.id }}"></p>
+            <div id="PopupDesc-{{ section.id }}"></div>
+          </div>
+        </div>
+          {% comment %} Variants container - injected via JS but container exists in HTML for Figma CSS alignment {% endcomment %}
+        <div id="PopupVariants-{{ section.id }}">
+          
+        </div>
+      </div>
+        {% comment %} Add to cart form - sends variant id + quantity to /cart/add.js {% endcomment %}
+      <form id="PopupForm-{{ section.id }}" class="popup-form">
+        <input type="hidden" id="PopupVariantId-{{ section.id }}" name="id" value="">
+        <div style="display:flex; gap:10px;">
+          <input type="number" name="quantity" value="1" min="1" style="width:70px; border:1px solid #000; padding:10px;">
+          <button type="submit" style="flex:1; background:#000; color:#fff; border:none; padding:12px; cursor:pointer; font-weight:bold;">Add to Cart</button>
+        </div>
+        <p id="PopupMessage-{{ section.id }}" style="margin-top:10px; font-size:14px; display:none;"></p>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<style>
+#product-grid-{{ section.id }} { padding: 40px 20px; }
+#product-grid-{{ section.id }}  .wrapper-head { font-family: Lustria;font-size: 36px;line-height: 120%;margin-bottom: 30px;margin-top: 0;}
+/* 3 columns grid on desktop */
+#product-grid-{{ section.id }} .grid-wrapper {display: grid;grid-template-columns: repeat(3, 1fr);gap: 20px;max-width: 1400px;margin: 0 auto;}
+#product-grid-{{ section.id }} .product-image { position: relative; background: #F5F5F5; aspect-ratio: 1; }
+#product-grid-{{ section.id }} .product-image img { width: 100%; height: 100%; object-fit: cover;}
+/* Circle button hidden by default, visible on hover */
+#product-grid-{{ section.id }} .product-image .circle-btn {position: absolute;bottom: 15px; right: 15px;width: 38px; height: 38px;border-radius: 50%;background: #fff; color: #000;border: 1px solid #000;cursor: pointer;font-size: 20px;display: flex;align-items: center;justify-content: center;opacity: 0;transform: scale(0.8);transition: all 0.3s ease;pointer-events: none;}
+#product-grid-{{ section.id }} .product-image:hover .circle-btn {opacity: 1;transform: scale(1);pointer-events: all;}
+
+/* Mobile: 2 columns */
+@media(max-width:768px){
+  #product-grid-{{ section.id }} .grid-wrapper {grid-template-columns: repeat(2, 1fr);}
+}
+
+/* Popup overlay - hidden by default */
+
+#product-grid-{{ section.id }} .popup-overlay {position: fixed; inset: 0;background: rgba(0,0,0,0.6);display: none;align-items: center; justify-content: center;z-index: 9999;}
+#product-grid-{{ section.id }} .popup-overlay.show { display: flex; }
+
+/* Popup card same size as Figma */
+#product-grid-{{ section.id }} .popup-content {background: #fff; position: relative; padding: 20px;max-width: 350px;max-height: 447px;}
+#product-grid-{{ section.id }} .popup-close {position: absolute; top: 10px; right: 10px;background: none; border: none; font-size: 30px; cursor: pointer;}
+#product-grid-{{ section.id }} .popup-body { display: flex; flex-direction: column; margin-bottom: 20px;}
+#product-grid-{{ section.id }} .popup-body .popup-info {display: flex;gap: 5px;margin-top: 25px;align-items: center; }
+#product-grid-{{ section.id }} .popup-body .popup-info img { width: 120px;height: 140px;object-fit: cover; }
+#product-grid-{{ section.id }} .popup-body .popup-text { display: flex; flex-direction: column; gap: 5px; }
+#product-grid-{{ section.id }} .popup-body .popup-text h2 { font-family: Lustria;font-size: 16px;line-height: 120%;margin: 0;}
+#product-grid-{{ section.id }} .popup-body .popup-text p { font-family: Jost;font-weight: 300;font-style: Light;font-size: 14px; margin: 0;}
+#product-grid-{{ section.id }} .popup-body .popup-text div {font-family: Jost;font-weight: 300;font-style: Light;font-size: 13px;line-height: 110%;}
+
+/* Reverse order to show Color above Size like Figma */
+#PopupVariants-{{ section.id }} {display: flex;flex-direction: column-reverse;gap: 5px;}
+
+</style>
+
+
+<script>
+  (function() {
+    // IIFE to avoid polluting global scope when multiple sections exist
+  const sectionRoot = document.getElementById('product-grid-{{ section.id }}');
+  if (!sectionRoot) return;
+
+  const overlay = document.getElementById('PopupOverlay-{{ section.id }}');
+  const popupImage = document.getElementById('PopupImage-{{ section.id }}');
+  const popupTitle = document.getElementById('PopupTitle-{{ section.id }}');
+  const popupPrice = document.getElementById('PopupPrice-{{ section.id }}');
+  const popupDesc = document.getElementById('PopupDesc-{{ section.id }}');
+  const variantsWrap = document.getElementById('PopupVariants-{{ section.id }}');
+  const variantInput = document.getElementById('PopupVariantId-{{ section.id }}');
+  const popupForm = document.getElementById('PopupForm-{{ section.id }}');
+  const popupMessage = document.getElementById('PopupMessage-{{ section.id }}');
+  const closeBtn = sectionRoot.querySelector('.popup-close');
+
+   let selectedOptions = []; // Stores current selection [Color, Size]
+  let softJacket = null; // Cache for dark-winter-jacket product for auto-add
+  let matchedVariant = null; // Currently matched variant based on selection
+
+    // Preload the jacket product so it's ready if condition is met
+    fetch('/products/dark-winter-jacket.js')
+    .then(r=>r.json())
+    .then(d=>{ softJacket=d; console.log('Jacket loaded:', d.title); })
+    .catch(()=> console.error('Failed to load Dark Winter Jacket product'));
+
+    // Attach click listener to each + button
+    sectionRoot.querySelectorAll('.circle-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = this.closest('.product-card');
+      const productData = JSON.parse(card.dataset.product);
+
+      // Fill popup with product data from data-attribute
+      popupTitle.textContent = productData.title;
+      popupPrice.textContent = productData.price_formatted;
+      popupImage.src = productData.image;
+      popupDesc.innerHTML = productData.description;
+
+      selectedOptions = [];
+      variantsWrap.innerHTML = '';
+
+      // Loop through product options (e.g., Color, Size) and build buttons
+      productData.options.forEach((optName, optIndex) => {
+        const values = [...new Set(productData.variants.map(v => v['option'+(optIndex+1)]))];
+        const div = document.createElement('div');
+        div.innerHTML = `<strong>${optName}:</strong><div style="display:flex; gap:6px; margin-top:6px; flex-wrap:wrap;"></div>`;
+        const list = div.querySelector('div:last-child');
+
+        values.forEach(val => {
+          const b = document.createElement('button');
+          b.type='button'; b.textContent=val;
+          b.style.cssText='padding:6px 12px; border:1px solid #000; background:#fff; cursor:pointer;';
+          // On select: highlight button, save selection, find matching variant
+          b.onclick = ()=>{
+            list.querySelectorAll('button').forEach(x=>{x.style.background='#fff'; x.style.color='#000';});
+            b.style.background='#000'; b.style.color='#fff';
+            selectedOptions[optIndex]=val;
+            // Find variant where all selected options match
+            const matched = productData.variants.find(v=> selectedOptions.every((ov,i)=>!ov || v['option'+(i+1)]===ov));
+            if(matched) {
+              variantInput.value = matched.id; // This id will be sent to cart
+              matchedVariant = matched; 
+            }
+          };
+          list.appendChild(b);
+        });
+        variantsWrap.appendChild(div);
+        div.querySelector('button')?.click(); // Auto-select first value
+      });
+
+      overlay.classList.add('show');
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    });
+  });
+
+  function closePopup() {
+    overlay.classList.remove('show');
+    document.body.style.overflow = 'auto';
+  }
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) closePopup(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && overlay.classList.contains('show')) closePopup(); });
+
+  // Handle add to cart + special condition Black + Medium
+  if(popupForm) {
+    popupForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const formData = new FormData(this);
+
+      // Check variant title (e.g., "Black / Medium") - more reliable than option index
+      const title = (matchedVariant ? matchedVariant.title : '').toLowerCase();
+      const hasBlack = title.includes('black');
+      const hasMedium = title.includes('medium') || title.split('/').some(s => s.trim() === 'm');
+
+      // 1- Add main product
+      fetch('/cart/add.js', { method: 'POST', body: formData })
+        .then(res => res.json())
+        .then(data => {
+        // 2- If condition met: Black + Medium -> auto-add Dark Winter Jacket
+        if(hasBlack && hasMedium){
+          if(!softJacket) { alert('Failed to load Dark Winter Jacket product'); return; }
+          let jVar = softJacket.variants.find(v => {
+            const t = (v.title || '').toLowerCase(); 
+            const isBlack = t.includes('black');
+            const isMedium = t.includes('medium') || t.split('/').some(s => s.trim() === 'm');
+          return isBlack && isMedium;
+          }) || softJacket.variants[0]; // Fallback to first available variant
+
+          return fetch('/cart/add.js', {
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({id: jVar.id, quantity: 1})
+          });
+        }
+      })
+      .then(()=>{
+        popupMessage.textContent = hasBlack && hasMedium? '✓ Added + Dark Winter Jacket auto-added!' : '✓ Added to cart!';
+        popupMessage.style.display = 'block';
+        popupMessage.style.color = 'green';
+        setTimeout(() => { popupMessage.style.display = 'none'; closePopup(); }, 1200);
+      })
+      .catch(err => {
+        console.error(err);
+        popupMessage.textContent = 'Error adding to cart';
+        popupMessage.style.display = 'block';
+        popupMessage.style.color = 'red';
+      });
+    });
+  }
+})();
+</script>
+
+
+{% schema %}
+{
+  "name": "Product Grid",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Product Grid" }]
+}
+{% endschema %}
