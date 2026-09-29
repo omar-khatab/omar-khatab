@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "banner": {
+      "type": "tisso-banner",
+      "settings": {
+        "heading": "Tisso vison in the wild",
+        "subheading": "Discover our new collection",
+        "btn1_text": "Shop Collection",
+        "btn2_text": "Our Story",
+        "bg_color": "#F5F5F5"
+      }
+    },
+    "grid": {
+      "type": "tisso-grid",
+      "blocks": {
+        "product_1": { "type": "product", "settings": { "product": "" } },
+        "product_2": { "type": "product", "settings": { "product": "" } },
+        "product_3": { "type": "product", "settings": { "product": "" } },
+        "product_4": { "type": "product", "settings": { "product": "" } },
+        "product_5": { "type": "product", "settings": { "product": "" } },
+        "product_6": { "type": "product", "settings": { "product": "" } }
+      },
+      "block_order": ["product_1", "product_2", "product_3", "product_4", "product_5", "product_6"],
+      "settings": {}
+    }
+  },
+  "order": ["banner", "grid"]
+}
