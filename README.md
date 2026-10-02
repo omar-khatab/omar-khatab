@@ -1,10 +1,9 @@
 > ### 📦 FOR COMPANY REVIEW - Shopify Theme Task
-> **هذا الريبو هو تاسك شوبيفاي المطلوب - اسم الريبو اجباري يكون نفس اسم اليوزر**
-> - **Default Branch:** `master` -> فيه التاسك الأساسي كامل (Merged)
-> - **Branch:** `development` -> نفس التاسك
-> - **🚀 Enhancement PR (Open):** تحسينات زيادة عملتها: Quick View Modal + Custom Select + Live Cart Update
->   -> شوف الـ PR المفتوح هنا: **https://github.com/omar-khatab/omar-khatab/pulls**
-> - **Theme Structure:** `assets / sections / snippets / layout / templates` هو ثيم شوبيفاي
+> **This repo is the required Shopify task - Repo name must be same as username per requirements**
+> - **Default Branch:** `master` -> Contains full main task (Merged PR: development -> master)
+> - **Branch:** `development` -> Same main task
+> - **🚀 Enhancement PR (Open):** Extra improvements: Quick View Modal + Custom Select + Live Cart Update
+>   -> Check the Open PR here: **https://github.com/omar-khatab/omar-khatab/pulls**
 > ---
 <div align="center">
 
