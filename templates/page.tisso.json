@@ -27,28 +27,34 @@
     "grid": {
       "type": "product-grid",
       "blocks": {
+        "product_VVFJDm": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
         "product_JjD9dy": {
           "type": "product",
           "settings": {
-            "product": "dark-denim-top"
+            "product": ""
           }
         },
         "product_1": {
           "type": "product",
           "settings": {
-            "product": "black-leather-bag"
+            "product": ""
           }
         },
         "product_2": {
           "type": "product",
           "settings": {
-            "product": "blue-silk-tuxedo"
+            "product": ""
           }
         },
         "product_3": {
           "type": "product",
           "settings": {
-            "product": "classic-varsity-top"
+            "product": ""
           }
         },
         "product_5": {
@@ -59,6 +65,7 @@
         }
       },
       "block_order": [
+        "product_VVFJDm",
         "product_JjD9dy",
         "product_1",
         "product_2",
