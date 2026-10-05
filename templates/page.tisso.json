@@ -27,6 +27,12 @@
     "grid": {
       "type": "product-grid",
       "blocks": {
+        "product_JjD9dy": {
+          "type": "product",
+          "settings": {
+            "product": "dark-denim-top"
+          }
+        },
         "product_1": {
           "type": "product",
           "settings": {
@@ -45,19 +51,7 @@
             "product": "classic-varsity-top"
           }
         },
-        "product_4": {
-          "type": "product",
-          "settings": {
-            "product": "classic-leather-jacket"
-          }
-        },
         "product_5": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_6": {
           "type": "product",
           "settings": {
             "product": ""
@@ -65,12 +59,11 @@
         }
       },
       "block_order": [
+        "product_JjD9dy",
         "product_1",
         "product_2",
         "product_3",
-        "product_4",
-        "product_5",
-        "product_6"
+        "product_5"
       ],
       "settings": {}
     }
