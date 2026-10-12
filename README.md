@@ -92,7 +92,7 @@ Full e-commerce experience with real-world features:
 
 ---
 
-## 🌱 Roots Before React — 5 Templates
+## 🌱 Roots Before React — 5 Templates + Admin Dashboard
 
 **Live:** https://omar-khatab.github.io/roots-before-react/ | **Code:** https://github.com/omar-khatab/roots-before-react
 
