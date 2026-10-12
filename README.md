@@ -13,6 +13,7 @@
 <a href="https://www.linkedin.com/in/omar-essam-319c/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" /></a>
 <a href="mailto:omaressam0870@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail" /></a>
 
+<br>
 
 <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css" />
 
@@ -96,7 +97,7 @@ Full e-commerce experience with real-world features:
 
 **Live:** https://omar-khatab.github.io/roots-before-react/ | **Code:** https://github.com/omar-khatab/roots-before-react
 
-Before React, I built 5 landing pages with pure HTML/CSS/JS:
+Before React, I built 5 landing pages + admin Dashboard with pure HTML/CSS/JS:
 
 | Project | Focus |
 |---------|-------|
@@ -105,6 +106,7 @@ Before React, I built 5 landing pages with pure HTML/CSS/JS:
 | 💻 **Digital** | CSS Grid, modern layout |
 | 🚀 **Gonex** | Clean UI, responsive |
 | ✨ **Special Design** | JavaScript interactions |
+| 📊 **Admin Dashboard** | Multi html pages |
 
 `HTML5` `CSS3` `JavaScript` `BEM` `Flexbox` `Grid`
 
