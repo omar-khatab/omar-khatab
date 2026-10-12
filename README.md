@@ -13,7 +13,6 @@
 <a href="https://www.linkedin.com/in/omar-essam-319c/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" /></a>
 <a href="mailto:omaressam0870@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail" /></a>
 
-<br><br>
 
 <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css" />
 
