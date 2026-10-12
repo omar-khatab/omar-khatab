@@ -1,10 +1,3 @@
-> ### 📦 FOR COMPANY REVIEW - Shopify Theme Task
-> **This repo is the required Shopify task - Repo name must be same as username per requirements**
-> - **Default Branch:** `master` -> Contains full main task (Merged PR: development -> master)
-> - **Branch:** `development` -> Same main task
-> - **🚀 Enhancement PR (Open):** Extra improvements: Quick View Modal + Custom Select + Live Cart Update
->   -> Check the Open PR here: **https://github.com/omar-khatab/omar-khatab/pulls**
-> ---
 <div align="center">
 
 # 👋 Omar Khatab
@@ -61,6 +54,21 @@ During my internship at **National Authority for Tunnels (HVAC Systems)**, I wor
 `Next.js` `TypeScript` `Tailwind CSS` `Vercel`
 
 **[🌐 Live Demo](https://hvac-calculator-ebon.vercel.app/) • [💻 Source Code](https://github.com/omar-khatab/HVAC-Calculator)**
+
+---
+
+## 🛍 Shopify Custom Sections — Liquid
+
+**Code:** <https://github.com/omar-khatab/shopify-custom-sections>
+
+Custom sections built on the Shopify Dawn theme:
+
+- 🛒 **Product Grid with Quick View:** popup with dynamic variant selection, add to cart through the AJAX Cart API, a Black + Medium cross-sell promotion, and live cart icon refresh
+- 🎁 **Full Banner:** responsive banner with an accessible mobile burger menu, editable from the theme editor
+
+`Liquid` `JavaScript` `CSS` `Shopify Dawn`
+
+**[💻 Code](https://github.com/omar-khatab/shopify-custom-sections)**
 
 ---
 
