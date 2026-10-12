@@ -93,42 +93,6 @@ Full e-commerce experience with real-world features:
 
 ---
 
-## ▲ SaaS Landing — Next.js
-
-**Live:** https:[STRIPPED 65 bytes].vercel.app/ | **Code:** https://github.com/omar-khatab/saas-landing-next.js
-
-Modern SaaS landing page built with Next.js App Router:
-
-- 🚀 Hero section with call-to-action
-- ✨ Features, pricing, testimonials, FAQ sections
-- 📱 Responsive design — works on all devices
-- ⚡ Fast performance with Next.js optimization
-- 🎬 Smooth scroll animations
-
-`Next.js` `App Router` `React` `Tailwind CSS` `Responsive Design`
-
-**[🌐 Live](https:[STRIPPED 65 bytes].vercel.app/) • [💻 Code](https://github.com/omar-khatab/saas-landing-next.js)**
-
----
-
-## 📊 Admin Dashboard — 8 Pages
-
-**Live:** https://omar-khatab.github.io/Admin-Dashboard/ | **Code:** https://github.com/omar-khatab/admin-dashboard
-
-Complete admin panel built from scratch:
-
-- 📄 **8 Pages:** Dashboard, Projects, Courses, Files, Friends, Plans, Profile, Settings
-- 📈 Statistics cards, progress bars, data tables
-- 📁 File manager UI, user roles
-- 📱 Responsive layout — sidebar becomes drawer on mobile
-- 🧩 Built with pure HTML5, CSS3, JavaScript to master fundamentals
-
-`HTML5` `CSS3` `JavaScript` `Flexbox` `CSS Grid` `Responsive`
-
-**[🌐 Live](https://omar-khatab.github.io/Admin-Dashboard/) • [💻 Code](https://github.com/omar-khatab/admin-dashboard)**
-
----
-
 ## 🌱 Roots Before React — 5 Templates
 
 **Live:** https://omar-khatab.github.io/roots-before-react/ | **Code:** https://github.com/omar-khatab/roots-before-react
