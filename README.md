@@ -13,7 +13,6 @@
 <a href="mailto:omaressam0870@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail" /></a>
 
 <br>
-
 **Cairo, Egypt • Ain Shams University — Mechanical Power (2024)**
 
 </div>
