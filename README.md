@@ -16,8 +16,6 @@
 
 **Cairo, Egypt • Ain Shams University — Mechanical Power (2024)**
 
-<img src="https://komarev.com/ghpvc/?username=omar-khatab&style=flat-square&label=Profile+Views&color=22C55E" />
-
 </div>
 
 ---
