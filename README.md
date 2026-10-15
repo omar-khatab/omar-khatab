@@ -2,9 +2,9 @@
 
 # 👋 Omar Khatab
 
-### Engineering Software Developer | Frontend Developer
+### Engineering Software Developer | Frontend Engineer
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=22C55E&center=true&vCenter=true&width=800&lines=Engineering+Software+Developer;Frontend+Developer+%7C+React+%2F+Next.js;Mechanical+Power+Engineering+Background;Building+Real+World+Applications+%F0%9F%9A%80" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=22C55E&center=true&vCenter=true&width=800&lines=Engineering+Software+Developer;Frontend+Engineer+%7C+React+%2F+Next.js;100%25+Test+Coverage+%7C+Vitest;Mechanical+Power+Engineering+Background" />
 
 <br>
 
@@ -14,37 +14,34 @@
 
 <br>
 
-**Cairo, Egypt • Ain Shams University — Mechanical Power (2024)**
+**Cairo, Egypt • Ain Shams University — Mechanical Power (2024) • NAT - HVAC Systems**
 
 </div>
 
 ---
 
-## 🔧 Featured Project — HVAC Engineering Suite
+## 🔧 Featured Project — HVAC Engineering Suite [100% Tested]
 
 <div align="center">
 
 ### Live: https://hvac-calculator-ebon.vercel.app/
 
-[Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
-[TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+[Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+[TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
 [Tailwind](https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)
-[Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel)
+[Tests](https://img.shields.io/badge/tests-8%20passing-brightgreen?style=flat-square)
+[Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
+[Vitest](https://img.shields.io/badge/tested%20with-vitest-6E9F18?style=flat-square)
 
 </div>
 
-**What it is:**
-Interactive HVAC calculator that translates real engineering formulas into a clean web interface. Built to bridge my Mechanical Power background with frontend skills.
+**What it is:** Production-grade HVAC toolkit translating real engineering formulas into a testable, traceable web interface.
 
-**What it does:**
-- **BTU / Cooling Load** — estimates based on room area, occupancy, window exposure
-- **Duct Sizing** — calculates duct area & diameter from CFM & velocity (Area = CFM / Velocity)
-- Input validation, real-time results, responsive UI
-
-**Why I built it:**
-During my internship at **National Authority for Tunnels (HVAC Systems)**, I worked with HVAC calculations. I wanted to show I can turn engineering logic into a usable product with Next.js + TypeScript.
-
-`Next.js` `TypeScript` `Tailwind CSS` `Vercel`
+**Engineering Highlights:**
+- **Separated Logic:** Core formulas isolated in `libs/formulas.ts` for unit testability - no UI coupling
+- **100% Coverage:** Stmts, Branch, Funcs, Lines - edge cases `velocity=0`, `cfm=0`, `toBeCloseTo` for float conversions
+- **Duct Sizing:** Continuity Equation `A = Q / V` + SMACNA-aligned rectangular selection
+- **BTU Load:** Field method with sun exposure factors + occupant heat load logic
 
 **[🌐 Live Demo](https://hvac-calculator-ebon.vercel.app/) • [💻 Source Code](https://github.com/omar-khatab/HVAC-Calculator)**
 
@@ -52,16 +49,12 @@ During my internship at **National Authority for Tunnels (HVAC Systems)**, I wor
 
 ## 🛍 Shopify Custom Sections — Liquid
 
-**Code:** <https://github.com/omar-khatab/shopify-custom-sections>
+**Code:** https://github.com/omar-khatab/shopify-custom-sections
 
-Custom sections built on the Shopify Dawn theme:
+- 🛒 **Product Grid with Quick View:** AJAX Cart API, variant selection, cross-sell, live cart refresh
+- 🎁 **Full Banner:** responsive + accessible mobile menu, theme editor editable
 
-- 🛒 **Product Grid with Quick View:** popup with dynamic variant selection, add to cart through the AJAX Cart API, a Black + Medium cross-sell promotion, and live cart icon refresh
-- 🎁 **Full Banner:** responsive banner with an accessible mobile burger menu, editable from the theme editor
-
-`Liquid` `JavaScript` `CSS` `Shopify Dawn`
-
-**[💻 Code](https://github.com/omar-khatab/shopify-custom-sections)**
+`Liquid` `JavaScript` `Shopify Dawn`
 
 ---
 
@@ -69,41 +62,12 @@ Custom sections built on the Shopify Dawn theme:
 
 **Live:** https://e-commerce-three-coral-58.vercel.app/ | **Code:** https://github.com/omar-khatab/e-commerce
 
-Full e-commerce experience with real-world features:
+- 🛍 DummyJSON API with loading states
+- 🛒 Cart + Wishlist + Search + Filtering
+- 🎬 Framer Motion + React Hot Toast + Context API
+- 📱 Mobile-first responsive
 
-- 🛍 Product listing from **DummyJSON API** with loading states
-- 🛒 Shopping cart with add/remove/quantity update
-- ❤ Wishlist — save favorites
-- 🔎 Search & category filtering
-- 📱 Fully responsive — mobile first
-- 🎬 **Framer Motion** animations for smooth UX
-- 🔔 **React Hot Toast** for feedback
-- 🗂 **Context API** for global state management
-
-`React` `React Router` `Context API` `Framer Motion` `React Hot Toast` `REST API` `CSS3`
-
-**[🌐 Live](https://e-commerce-three-coral-58.vercel.app/) • [💻 Code](https://github.com/omar-khatab/e-commerce)**
-
----
-
-## 🌱 Roots Before React — 5 Templates + Admin Dashboard
-
-**Live:** https://omar-khatab.github.io/roots-before-react/ | **Code:** https://github.com/omar-khatab/roots-before-react
-
-Before React, I built 5 landing pages + admin Dashboard with pure HTML/CSS/JS:
-
-| Project | Focus |
-|---------|-------|
-| 🏠 **Leon** | Agency template, responsive design |
-| 🎨 **Kasper** | Creative template, flexbox |
-| 💻 **Digital** | CSS Grid, modern layout |
-| 🚀 **Gonex** | Clean UI, responsive |
-| ✨ **Special Design** | JavaScript interactions |
-| 📊 **Admin Dashboard** | Multi html pages |
-
-`HTML5` `CSS3` `JavaScript` `BEM` `Flexbox` `Grid`
-
-**[🌱 Live](https://omar-khatab.github.io/roots-before-react/) • [💻 Code](https://github.com/omar-khatab/roots-before-react)**
+`React` `React Router` `Context API` `Framer Motion` `REST API`
 
 ---
 
@@ -111,17 +75,13 @@ Before React, I built 5 landing pages + admin Dashboard with pure HTML/CSS/JS:
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,git,github,vercel,vscode" />
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,vitest,git,github,vercel,vscode" />
 
 <br><br>
 
-**Frontend:** React.js • Next.js • TypeScript • JavaScript • Tailwind CSS • HTML5 • CSS3
+**Frontend:** React.js • Next.js • TypeScript • Tailwind CSS • Testing (Vitest)
 
-**Libraries:** Framer Motion • React Router • Context API • Material UI • Swiper • React Hot Toast
-
-**Tools:** Git • GitHub • Vercel • VS Code
-
-**Engineering:** Thermodynamics • Fluid Mechanics • Heat Transfer • HVAC • AutoCAD
+**Engineering Mindset:** Separation of Concerns • Zero-division Safety • 100% Coverage • SMACNA Standards
 
 </div>
 
@@ -129,16 +89,14 @@ Before React, I built 5 landing pages + admin Dashboard with pure HTML/CSS/JS:
 
 ## 🧭 My Journey
 
-<div align="center">
-
 ```mermaid
 graph TD
     A[🌱 HTML CSS JS] --> B[📚 5 Vanilla Projects]
-    B --> C[⚛ React.js]
-    C --> D[🛒 E-Commerce]
-    D --> E[▲ Next.js]
-    E --> F[🔧 HVAC Suite]
-    F --> G[🚀 Production Ready]
+    B --> C[⚛ React.js + Context API]
+    C --> D[🛒 E-Commerce - API Integration]
+    D --> E[▲ Next.js + TypeScript Strict]
+    E --> F[🔧 HVAC Suite - 100% Tested]
+    F --> G[🚀 Production Ready + Coverage]
     
     style A fill:#22C55E,stroke:#000,color:#fff
     style F fill:#22C55E,stroke:#000,color:#fff
