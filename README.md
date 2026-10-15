@@ -91,7 +91,7 @@
 
 ```mermaid
 graph TD
-    A[🌱 HTML CSS JS] --> B[📚 5 Vanilla Projects]
+    A[🌱 HTML CSS JS] --> B[📚 6 Vanilla Projects]
     B --> C[⚛ React.js + Context API]
     C --> D[🛒 E-Commerce - API Integration]
     D --> E[▲ Next.js + TypeScript Strict]
