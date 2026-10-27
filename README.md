@@ -32,6 +32,7 @@
 [Tests](https://img.shields.io/badge/tests-8%20passing-brightgreen?style=flat-square)
 [Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
 [Vitest](https://img.shields.io/badge/tested%20with-vitest-6E9F18?style=flat-square)
+[Playwright](https://img.shields.io/badge/E2E-Playwright-2EAD33?style=flat-square&logo=playwright)
 
 </div>
 
@@ -40,6 +41,7 @@
 **Engineering Highlights:**
 - **Separated Logic:** Core formulas isolated in `libs/formulas.ts` for unit testability - no UI coupling
 - **100% Coverage:** Stmts, Branch, Funcs, Lines - edge cases `velocity=0`, `cfm=0`, `toBeCloseTo` for float conversions
+- - **E2E & CI/CD Automation:** 28 Playwright E2E tests, GitHub Actions CI running tests and Lighthouse reporting on every push.
 - **Duct Sizing:** Continuity Equation `A = Q / V` + SMACNA-aligned rectangular selection
 - **BTU Load:** Field method with sun exposure factors + occupant heat load logic
 
@@ -62,10 +64,9 @@
 
 **Live:** https://e-commerce-three-coral-58.vercel.app/ | **Code:** https://github.com/omar-khatab/e-commerce
 
-- 🛍 DummyJSON API with loading states
-- 🛒 Cart + Wishlist + Search + Filtering
-- 🎬 Framer Motion + React Hot Toast + Context API
-- 📱 Mobile-first responsive
+- Full-featured responsive storefront built with React, React Router, and Context API.
+- Integrated live product data from REST API (DummyJSON) with robust error boundaries and skeleton loading states.
+- Persisted cart/favorites with `localStorage` and enriched UI with Framer Motion and mobile-first design.
 
 `React` `React Router` `Context API` `Framer Motion` `REST API`
 
@@ -79,9 +80,9 @@
 
 <br><br>
 
-**Frontend:** React.js • Next.js • TypeScript • Tailwind CSS • Testing (Vitest)
-
-**Engineering Mindset:** Separation of Concerns • Zero-division Safety • 100% Coverage • SMACNA Standards
+**Frontend:** React.js • Next.js • TypeScript • Tailwind CSS • Material UI • Framer Motion  
+**Testing & Quality:** Vitest • React Testing Library • Playwright • GitHub Actions • Lighthouse CI  
+**E-Commerce & Tools:** Shopify (Liquid, Ajax Cart) • Git • GitHub • Vercel • Windsurf (AI-assisted)
 
 </div>
 
@@ -91,12 +92,12 @@
 
 ```mermaid
 graph TD
-    A[🌱 HTML CSS JS] --> B[📚 6 Vanilla Projects]
+    A[🌱 HTML CSS JS] --> B[📚 5 Responsive Pages & Admin Dashboard]
     B --> C[⚛ React.js + Context API]
-    C --> D[🛒 E-Commerce - API Integration]
+    C --> D[🛒 E-Commerce Store - REST API]
     D --> E[▲ Next.js + TypeScript Strict]
-    E --> F[🔧 HVAC Suite - 100% Tested]
-    F --> G[🚀 Production Ready + Coverage]
+    E --> F[🔧 HVAC Suite - 100% Test Coverage]
+    F --> G[🚀 Production Ready + E2E & CI/CD]
     
     style A fill:#22C55E,stroke:#000,color:#fff
     style F fill:#22C55E,stroke:#000,color:#fff
