@@ -2,9 +2,9 @@
 
 # 👋 Omar Khatab
 
-### Engineering Software Developer | Frontend Engineer
+### Software Developer | Python & JavaScript | React / Next.js
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=22C55E&center=true&vCenter=true&width=800&lines=Engineering+Software+Developer;Frontend+Engineer+%7C+React+%2F+Next.js;100%25+Test+Coverage+%7C+Vitest;Mechanical+Power+Engineering+Background" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=22C55E&center=true&vCenter=true&width=800&lines=Software+Developer+%7C+Python+%26+JavaScript;Frontend+Engineer+%7C+React+%2F+Next.js;Automation+Tools+%2B+Modern+Web+Apps;Mechanical+Power+Engineering+Background" />
 
 <br>
 
@@ -49,6 +49,31 @@
 
 ---
 
+## 🐍 Featured Project — File Organizer [Python Desktop App]
+
+<div align="center">
+
+[Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
+[PySide6](https://img.shields.io/badge/GUI-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)
+[SQLite](https://img.shields.io/badge/DB-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+[Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
+[Version](https://img.shields.io/badge/Version-v3.0-orange?style=flat-square)
+
+</div>
+
+**What it is:** A real-world Windows utility I built to solve my own messy Downloads / Desktop problem. It started as a CLI script and became a full desktop product anyone can use.
+
+**Product Highlights:**
+- **Smart Organizing:** Automatically sorts any folder by file type (Images, Docs, Videos, etc.) with duplicate handling and no overwrites
+- **Full Desktop GUI:** Dark-theme PySide6 app with live folder watching, preview before organize, undo, drag & drop, and Arabic/English toggle
+- **Built for Safety:** Dry-run mode, confirmation prompts, protected-path check, and right-click context menu integration
+- **Persistence:** Complete file history and operation log stored in SQLite
+- **Two Versions:** CLI version with `argparse` for power users + GUI version for everyone
+
+**[💻 Source Code](https://github.com/omar-khatab/File-Organizer)**
+
+---
+
 ## 🛍 Shopify Custom Theme Sections
 
 **Code:** https://github.com/omar-khatab/shopify-custom-sections
@@ -77,13 +102,14 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,vitest,git,github,vercel,vscode" />
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,python,qt,sqlite,git,github,vercel,vscode" />
 
 <br><br>
 
 **Frontend:** React.js • Next.js • TypeScript • Tailwind CSS • Material UI • Framer Motion  
+**Python & Desktop:** Python • PySide6 • SQLite • pathlib / shutil / argparse  
 **Testing & Quality:** Vitest • React Testing Library • Playwright • GitHub Actions • Lighthouse CI  
-**E-Commerce & Tools:** Shopify (Liquid, Ajax Cart) • Git • GitHub • Vercel • Windsurf (AI-assisted)
+**E-Commerce & Tools:** Shopify (Liquid, Ajax Cart) • Git • GitHub • Vercel
 
 </div>
 
@@ -98,8 +124,10 @@ graph TD
     C --> D[🛒 E-Commerce Store - REST API]
     D --> E[▲ Next.js + TypeScript Strict]
     E --> F[🔧 HVAC Suite - 100% Test Coverage]
-    F --> G[🚀 Production Ready + E2E & CI/CD]
+    F --> G[🐍 Python Tool - CLI to Desktop GUI]
+    G --> H[🚀 Production Ready + Automation + Web]
     
     style A fill:#22C55E,stroke:#000,color:#fff
     style F fill:#22C55E,stroke:#000,color:#fff
-    style G fill:#111827,stroke:#22C55E,color:#fff
+    style G fill:#3776AB,stroke:#000,color:#fff
+    style H fill:#111827,stroke:#22C55E,color:#fff
