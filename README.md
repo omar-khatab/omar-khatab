@@ -49,14 +49,15 @@
 
 ---
 
-## 🛍 Shopify Custom Sections — Liquid
+## 🛍 Shopify Custom Theme Sections
 
 **Code:** https://github.com/omar-khatab/shopify-custom-sections
 
-- 🛒 **Product Grid with Quick View:** AJAX Cart API, variant selection, cross-sell, live cart refresh
-- 🎁 **Full Banner:** responsive + accessible mobile menu, theme editor editable
+- Translated Figma designs into custom Dawn theme sections (Banner + Product Grid with Quick View) using Liquid and Vanilla JS.
+- Implemented O(1) hash-map variant selector, Black+Medium cross-sell auto-add, and no-reload header cart refresh.
+- Handled async race conditions by locking popups during requests using a feature-branch + PR workflow.
 
-`Liquid` `JavaScript` `Shopify Dawn`
+`Liquid` `JavaScript` `Shopify CLI` `Dawn Theme`
 
 ---
 
