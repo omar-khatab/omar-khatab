@@ -41,7 +41,7 @@
 **Engineering Highlights:**
 - **Separated Logic:** Core formulas isolated in `libs/formulas.ts` for unit testability - no UI coupling
 - **100% Coverage:** Stmts, Branch, Funcs, Lines - edge cases `velocity=0`, `cfm=0`, `toBeCloseTo` for float conversions
-- - **E2E & CI/CD Automation:** 28 Playwright E2E tests, GitHub Actions CI running tests and Lighthouse reporting on every push.
+- **E2E & CI/CD Automation:** 28 Playwright E2E tests, GitHub Actions CI running tests and Lighthouse reporting on every push.
 - **Duct Sizing:** Continuity Equation `A = Q / V` + SMACNA-aligned rectangular selection
 - **BTU Load:** Field method with sun exposure factors + occupant heat load logic
 
