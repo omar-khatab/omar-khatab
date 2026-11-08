@@ -70,7 +70,7 @@
 - **Persistence:** Complete file history and operation log stored in SQLite
 - **Two Versions:** CLI version with `argparse` for power users + GUI version for everyone
 
-**[💻 Source Code](https://github.com/omar-khatab/File-Organizer)**
+**[💻 Source Code](https://github.com/omar-khatab/file-organizer-with-python)**
 
 ---
 
